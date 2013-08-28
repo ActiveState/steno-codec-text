@@ -11,6 +11,7 @@
 # The resulting package installs in /home/stackato/stackato/code,
 # is not intended to be relocatable.
 #
+#
 
 NAME=stackato-steno-codec-text
 
