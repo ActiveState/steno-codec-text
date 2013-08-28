@@ -5,8 +5,7 @@ Gem::Specification.new do |gem|
   gem.summary     = "A plaintext codec for the Steno logger."
 
   glob = Dir["**/*"].
-    reject { |f| File.directory?(f) }.
-    reject { |f| gitignore.any? { |i| File.fnmatch(i, f) } }
+    reject { |f| File.directory?(f) }
 
   gem.files         = glob
   gem.name          = "steno-codec-text"
