@@ -1,15 +1,15 @@
-# Package configuration for stackato-steno-codec-text
+# Package configuration for steno-codec-text
 
 # Values here will override environment variables and will be overridden
 # by command options.  This is a shell file so you can use it to perform
 # arbitrary actions.  The main intent is to set up various PKG_*
 # variables used to configure and generate the package.
 
-PKG_NAME="stackato-steno-codec-text"
+PKG_NAME="steno-codec-text"
 PKG_VERSION="0.1"
 #PKG_VERSION_COUNTER="auto"
 PKG_ARCH="all"
-PKG_DESCR_SHORT="stackato-steno-codec-text"
+PKG_DESCR_SHORT="steno-codec-text"
 PKG_DESCR_LONG="Packaged distribution of the steno-codec-text gem."
 PKG_GITDESCRIBE=""
 PKG_DEPENDS="stackato-rubies"
