@@ -17,6 +17,6 @@ class Steno::Codec::Text < Steno::Codec::Base
 
     log_level_text = record.log_level.to_s.upcase.rjust(6)
 
-    "[#{record.timestamp.to_s}] #{record.source} - pid=#{record.process_id} file=#{record.file} lineno=#{record.lineno} #{log_level_text} -- #{msg}\n"
+    "[#{record.timestamp.to_s}] #{record.source} - pid=#{record.process_id} #{log_level_text} -- #{msg}\n"
   end
 end
