@@ -1,5 +1,5 @@
 #
-# Makefile for stackato-steno-codec-text
+# Makefile for steno-codec-text
 #
 # Used solely by packaging systems.
 # Must support targets "all", "install", "uninstall".
@@ -12,7 +12,7 @@
 # is not intended to be relocatable.
 #
 
-NAME=stackato-steno-codec-text
+NAME=steno-codec-text
 
 INSTALLHOME=/home/stackato
 INSTALLBASE=$(INSTALLHOME)/stackato
