@@ -16,10 +16,12 @@ class Steno::Codec::Text < Steno::Codec::Base
       end
 
     log_level_text = record.log_level.to_s.upcase.rjust(6)
-    data_text = ""
 
-    if (record.data && !record.data.empty?)
-      data_text = ", data: #{record.data.inspect}"
+    data_text = ""
+    if (record.log_level == :debug2)
+      if (record.data && !record.data.empty?)
+        data_text = ", data: #{record.data.inspect}"
+      end
     end
 
     "[#{record.timestamp.to_s}] #{record.source} - pid=#{record.process_id} #{log_level_text} -- #{msg}#{data_text}\n"
